@@ -8,6 +8,7 @@
     ]
   },
   "dependencies": {
+    "@aws-amplify/cli": "^9.1.0",
     "@aws-amplify/ui-react": "^2.20.0",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

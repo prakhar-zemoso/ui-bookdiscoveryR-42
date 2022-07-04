@@ -9,9 +9,7 @@ function _extends() { _extends = Object.assign ? Object.assign.bind() : function
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import '@aws-amplify/ui-react/styles.css';
-import { Flex, Icon, Image, SearchField, Text, View, Button } from "@aws-amplify/ui-react"; //import Button from '@mui/material/Button';
-
+import { Button, Flex, Icon, Image, SearchField, Text, View } from "@aws-amplify/ui-react";
 export default function NavBarNew(props) {
   const {
     overrides,
@@ -20,7 +18,7 @@ export default function NavBarNew(props) {
   return /*#__PURE__*/React.createElement(Flex, _extends({
     gap: "50px",
     direction: "row",
-    width: "auto",
+    width: "1366px",
     height: "68px",
     justifyContent: "center",
     alignItems: "center",
@@ -136,11 +134,9 @@ export default function NavBarNew(props) {
     position: "relative",
     padding: "8px 16px 8px 16px",
     size: "default",
-    isDisabled: false //variation="link"
-    ,
-    children: "Home",
-    backgroundColor: "#884FC1",
-    color: "white"
+    isDisabled: false,
+    variation: "link",
+    children: "Home"
   }, getOverrideProps(overrides, "Button27078"))), /*#__PURE__*/React.createElement(Button, _extends({
     display: "flex",
     direction: "row",
@@ -152,11 +148,9 @@ export default function NavBarNew(props) {
     position: "relative",
     padding: "8px 16px 8px 16px",
     size: "default",
-    isDisabled: false //variation="link"
-    ,
-    children: "Explore",
-    backgroundColor: "#884FC1",
-    color: "white"
+    isDisabled: false,
+    variation: "link",
+    children: "Explore"
   }, getOverrideProps(overrides, "Button27082"))), /*#__PURE__*/React.createElement(Button, _extends({
     display: "flex",
     direction: "row",
@@ -168,10 +162,8 @@ export default function NavBarNew(props) {
     position: "relative",
     padding: "8px 16px 8px 16px",
     size: "default",
-    color: "white",
-    backgroundColor: "#884FC1",
-    isDisabled: false // variation="link"
-    ,
+    isDisabled: false,
+    variation: "link",
     children: "My library"
   }, getOverrideProps(overrides, "Button27087")))), /*#__PURE__*/React.createElement(SearchField, _extends({
     display: "flex",

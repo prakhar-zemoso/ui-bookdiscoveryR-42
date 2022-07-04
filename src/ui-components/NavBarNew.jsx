@@ -7,26 +7,22 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import '@aws-amplify/ui-react/styles.css';
 import {
+  Button,
   Flex,
   Icon,
   Image,
   SearchField,
   Text,
   View,
-  Button
 } from "@aws-amplify/ui-react";
-//import Button from '@mui/material/Button';
-
-
 export default function NavBarNew(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
       gap="50px"
       direction="row"
-      width="auto"
+      width="1366px"
       height="68px"
       justifyContent="center"
       alignItems="center"
@@ -161,11 +157,8 @@ export default function NavBarNew(props) {
           padding="8px 16px 8px 16px"
           size="default"
           isDisabled={false}
-          //variation="link"
+          variation="link"
           children="Home"
-          backgroundColor="#884FC1"
-          color="white"
-          
           {...getOverrideProps(overrides, "Button27078")}
         ></Button>
         <Button
@@ -180,10 +173,8 @@ export default function NavBarNew(props) {
           padding="8px 16px 8px 16px"
           size="default"
           isDisabled={false}
-          //variation="link"
+          variation="link"
           children="Explore"
-          backgroundColor="#884FC1"
-          color="white"
           {...getOverrideProps(overrides, "Button27082")}
         ></Button>
         <Button
@@ -197,10 +188,8 @@ export default function NavBarNew(props) {
           position="relative"
           padding="8px 16px 8px 16px"
           size="default"
-          color="white"
-          backgroundColor="#884FC1"
           isDisabled={false}
-         // variation="link"
+          variation="link"
           children="My library"
           {...getOverrideProps(overrides, "Button27087")}
         ></Button>
